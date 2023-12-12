@@ -9,57 +9,68 @@
     <script src="https://kit.fontawesome.com/d341fefc1c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<!-- -------------header-------------- -->
-<div id="header">
+<!-- -------------navigation-------------- -->
+<div id="navigation">
     <div class="navbar">
         <nav>
             <!-- <img src="images/logo.png" class="logo"> -->
             <div class="nav-contact">
-                <a href="#">Aaron Wang</a>
+                <!-- <a href="#">Aaron Wang</a> -->
                 <a href="https://github.com/aarontwang"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/aaron-wang-453a90228/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://scholar.google.com/citations?user=xuLCVYgAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
                 <a href="https://twitter.com/aarontwang27"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
             <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
+                <!-- <li><a href="#header">Aaron Wang</a></li> -->
                 <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects<a></li>
+                <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     </div>
-    <div class="header-text">
+    <!-- <div class="navigation-text">
         <p>Student and Researcher<br>at Duke University</p>
         <h1>Hi, I'm <span>Aaron Wang</span></h1>
-    </div>
+    </div> -->
 </div>
 
-<!-- ---------------about----------->
-<div id="about">
+<!-- ---------------header----------->
+<div id="header">
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/aaron.jpg" alt="">
+            <div class="header-col-1">
+                <img src="images/aaron.jpg" alt="" align="right">
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Blah blah blah</p>
+            <div class="header-col-2">
+                <h1 class="sub-title"><b>Aaron</b> Wang</h1>
+                <p class="header-description">Undergraduate Student in ECE and CS at Duke University</p>
+                <hr>
+                
+                <p class="header-bio">I study machine learning and artificial intelligence. Currently, I am working with 
+                    Professor Lawrence Carin to understand in-context learning in transformers. I also conduct 
+                    research at the Brain Tool Lab, run by Dr. Patrick Codd, working on computer vision models to improve 
+                    resident training. <br><br> Before that, I worked at the Utah NeuroRobotics Lab at the University of Utah, with Dr. Jacob A. George,
+                    developing machine learning algorithms to improve the quality of life for people with neurological disabilities.
+                    I have also worked with Dr. Xianfeng (Terry) Yang at the Utah Transportation Research and Artificial Intelligence Lab (U-TRAIL),
+                    researching machine learning models for traffic flow prediction.
+                </p>
 
-                <div class="tab-titles">
+                <!-- <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
+                </div> -->
 
-                <div class="tab-contents active-tab" id="skills">
+                <!-- <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>AI and Machine Learning</span><br>Tensorflow, Keras, PyTorch, OpenCV</li>
-                        <!-- <li><span>Web Development</span><br>Web App Development</li> -->
-                        <!-- <li><span>App Development</span><br>Android/IOS App Development</li> -->
+                        <li><span>Web Development</span><br>Web App Development</li>
+                        <li><span>App Development</span><br>Android/IOS App Development</li>
                     </ul>
                 </div>
 
@@ -77,23 +88,61 @@
                         <li><span>2022 - 2023</span><br>University of Utah</li>
                         <li><span>2019 - 2023</span><br>Skyline High School</li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
 </div>
 
-<!-- -------------portfolio---------- -->
-<div id="portfolio">
+<!-- -------------about-------------- -->
+<div id="about">
+    <div class="container">
+        <h1 class="sub-title">About Me</h1>
+        <hr>
+        <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>AI and Machine Learning</span><br>Tensorflow, Keras, PyTorch, OpenCV</li>
+                <li><span>Web Development</span><br>Web App Development</li>
+                <li><span>App Development</span><br>Android/IOS App Development</li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2023 - Current</span><br>Research Assistant with Professor Lawrence Carin</li>
+                <li><span>2023 - Current</span><br>Research Assistant at the Brain Tool Lab</li>
+                <li><span>2022 - Current</span><br>Research Assistant at the Utah NeuroRobotics Lab</li>
+            </ul>
+        </div>
+
+        <div class="tab-contents" id="education">
+            <ul>
+                <li><span>2023 - 2027</span><br>B.S.E in Electrical and Computer Engineering from Duke University, Double Major in Computer Science</li>
+                <li><span>2022 - 2023</span><br>University of Utah</li>
+                <li><span>2019 - 2023</span><br>Skyline High School</li>
+            </ul>
+        </div>   
+    </div>
+</div>
+
+<!-- -------------publications---------- -->
+<div id="publications">
     <div class="container">
         <h1 class="sub-title">Publications</h1>
+        <hr>
         <div class="work-list">
             <div class="work">
                 <img src="images/work-1.png">
                 <div class="layer">
                     <h3>Social Media App</h3>
                     <p>The app connects you to talented people around the world.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#publications"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
@@ -102,7 +151,7 @@
                 <div class="layer">
                     <h3>Music App</h3>
                     <p>The app connects you to talented people around the world.</p>
-                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     <a href="#publications"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
 
@@ -111,11 +160,11 @@
                 <div class="layer">
                     <h3>Online Shopping App</h3>
                     <p>The app connects you to talented people around the world.</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="#publications"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="#publications" class="btn">See more</a>
     </div>
 </div>
 
@@ -123,26 +172,27 @@
 <div id="projects">
     <div class="container">
         <h1 class="sub-title">Projects</h1>
+        <hr>
         <div class="projects-list">
             <div>
                 <i class="fa-solid fa-code"></i>
                 <h2>Web Design</h2>
                 <p>Blah blah blah blah blah</p>
-                <a href="#">Learn more</a>
+                <a href="#projects">Learn more</a>
             </div>
 
             <div>
                 <i class="fa-solid fa-crop-simple"></i>
                 <h2>UI/UX Design</h2>
                 <p>Blah blah blah blah blah</p>
-                <a href="#">Learn more</a>
+                <a href="#projects">Learn more</a>
             </div>
 
             <div>
                 <i class="fa-brands fa-app-store"></i>
                 <h2>App Design</h2>
                 <p>Blah blah blah blah blah</p>
-                <a href="#">Learn more</a>
+                <a href="#projects">Learn more</a>
             </div>
         </div>
     </div>
@@ -160,7 +210,7 @@
                     <a href="https://github.com/aarontwang"><i class="fa-brands fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/aaron-wang-453a90228/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://scholar.google.com/citations?user=xuLCVYgAAAAJ&hl=en"><i class="fa-brands fa-google-scholar"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://twitter.com/aarontwang27"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
                 <a href="pdf/AaronWangCV.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -176,7 +226,7 @@
     </div>
     <!-- -------------copyright-------------- -->
     <div class="copyright">
-        <p>Copyright Aaron Wang.</p>
+        <p>Copyright &copy 2023 Aaron Wang</p>
     </div>
 
 </div>
